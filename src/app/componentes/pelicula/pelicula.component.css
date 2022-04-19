@@ -1,0 +1,37 @@
+.pelicula {
+    width: 100%;
+    padding: 30px;
+    /*margin-top: -70px;*/
+    display: flex;
+}
+
+.pelicula img:hover{
+    cursor: pointer;
+}
+.imagen{
+    transition: all 0.3s;
+    transform: scale(1); /* Corregir estado del año de estreno y minutos */
+}
+
+.imagen:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.imagen .anoestreno, .imagen .duracion{
+    position: fixed;
+    width: 50px;
+    right: 0px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.anoestreno{
+    background-color: rgba(191, 63, 63, 0.6);
+    top: 20px;
+}
+
+.duracion{
+    background-color: rgba(63, 123, 191, 0.6);
+    top: 50px;
+}

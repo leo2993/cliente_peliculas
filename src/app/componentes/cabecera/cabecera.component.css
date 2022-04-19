@@ -1,0 +1,80 @@
+.cabecera{
+    display: flex;
+    width: 100%;
+    margin:auto;
+    /*background-color: rgb(78, 78, 78);*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecera .izquierda{
+    width: 15%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    overflow: hidden; /* Esconder logo si se pasa */
+}
+
+.cabecera .izquierda img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.cabecera .izquierda img:hover{
+    transform: scale(1.05);
+}
+
+.cabecera .derecha {
+    width: 55%;
+}
+
+.cabecera ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera a{
+    text-decoration: none;
+    color: white;
+}
+
+.cabecera ul li{
+    padding: 2%;
+    margin: 1%;
+    transition: all 1s;
+    font-size: 1.2em;
+    margin-top: 1.8vw;
+    background-color: rgb(78, 78, 78);
+    
+}
+
+.cabecera ul li:hover{
+    /*background-color: rgb(119, 118, 118);*/
+    background-color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+
+
+.cabecera .busqueda {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera .busqueda input {
+    width: 70%; /*70% max*/
+    height: 20%;
+    margin-top: 2.5vw;
+    border-radius: 8px;
+    padding-left: 2%;
+    padding-right: 2%
+}
+
+.cabecera .busqueda label {
+    margin-top: 3vw;
+}

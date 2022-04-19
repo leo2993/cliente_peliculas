@@ -1,0 +1,9 @@
+<div class="listado">
+    <div class="titular">
+        <h3>Lo mas nuevo</h3>
+        <hr>
+    </div>
+    <div *ngFor="let pelicula of peliculas">
+        <app-pelicula [pelicula]="pelicula" (peliSeleccionada)="gestionarPelicula($event)"></app-pelicula>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+.contenedor {
+    /*background-color: rgb(78, 78, 78);*/
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.detalles {
+    width: 100%;
+}
+
+.detalles .imagen {
+    width: 15%;
+}
+
+.detalles .imagen img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.resumen {
+    width: 75%;
+    padding: 15px;
+    color: white;
+}
+
+.imagen, .resumen{
+    float: left;
+}
+
+.titulo {
+    clear: both;
+    display: block;
+    padding:1px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: cornflowerblue;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.cierre{
+    width: 100%;
+    margin-left: 37.5%;
+}
+
+.reparto {
+    color: rgb(160, 160, 160);
+}
+
+.contenedor button {
+    width: 25%;
+    padding: 10px;
+}

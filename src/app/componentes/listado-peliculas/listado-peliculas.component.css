@@ -1,0 +1,19 @@
+.listado {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*background-color: rgb(78, 78, 78);*/
+    overflow-x: hidden;
+}
+
+.titular{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.titular hr {
+    width: 80%;
+}

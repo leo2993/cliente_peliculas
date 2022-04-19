@@ -1,0 +1,23 @@
+<!--
+<div *ngIf="(pelicula)">
+    {{pelicula.titulo}}<button (click)="limpiar()">Cerrar</button>
+</div>-->
+
+<div class="contenedor" *ngIf="(pelicula)">
+    <div class="detalles">
+        <div class="imagen">
+            <img [src]="pelicula.imagen" [alt]="pelicula.titulo">
+        </div>
+        <div class="resumen" id="resumen">
+            <h2>{{pelicula.titulo}}</h2>
+        <article>{{pelicula.sinopsis}}</article>
+        <br>
+        <article class="reparto">Reparto: {{pelicula.actores}}</article>
+        <br>
+        <article class="reparto">Duración: {{pelicula.duracion}}min</article>
+        </div>
+    </div>
+    <div class="titulo"><h3>Trailer</h3></div>
+    <div class="video"><iframe width="920" height="600" [src]="pelicula.video | safe" [title]="pelicula.titulo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    <div class="cierre"><button (click)="limpiar()">Cerrar</button></div>
+</div>

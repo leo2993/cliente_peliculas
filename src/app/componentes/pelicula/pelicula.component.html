@@ -1,0 +1,7 @@
+<div class="pelicula" (click)="enviarPeliSeleccionada(pelicula); scroll('cabecera');">
+    <div class="imagen">
+        <p class="anoestreno">{{pelicula.anoestreno}}</p>
+        <p class="duracion">{{pelicula.duracion}}min</p>
+        <img [src]="pelicula.imagen" [alt]="'Portada de '+pelicula.titulo">
+    </div>
+</div>
