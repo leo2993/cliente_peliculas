@@ -9,6 +9,7 @@ import { PeliculaComponent } from './componentes/pelicula/pelicula.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DetallePeliculaComponent } from './componentes/detalle-pelicula/detalle-pelicula.component';
 import { SafePipe } from './safe.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SafePipe } from './safe.pipe';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

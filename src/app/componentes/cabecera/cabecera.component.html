@@ -14,7 +14,8 @@
             </ul>
         </div>
         <div class="busqueda">
-            <label for="busqueda">🔎</label><input type="text" name="busqueda" id="busqueda" placeholder="Buscar pelicula...">
+            <label for="busqueda">🔎</label>
+            <input [(ngModel)]="textoBuscar" (input)="buscar()" type="text" name="busqueda" id="busqueda" placeholder="Buscar película...">
         </div>
     </div>
 </header>

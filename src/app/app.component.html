@@ -1,6 +1,7 @@
-<app-cabecera></app-cabecera>
+    this.eventoBusqueda.emit(this.textoBuscar);
+<app-cabecera (eventoBusqueda)="buscar($event)"></app-cabecera>
 <app-detalle-pelicula></app-detalle-pelicula>
-<app-listado-peliculas (enviarSelPeli)="recibirSelPeli($event)"></app-listado-peliculas>
+<app-listado-peliculas [cadenaABuscar]="textoABuscar"></app-listado-peliculas>
 <app-pie></app-pie>
 
 

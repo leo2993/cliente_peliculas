@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Pelicula } from './models/pelicula.model';
 import { SafePipe } from './safe.pipe';
 
@@ -8,16 +8,17 @@ import { SafePipe } from './safe.pipe';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  textoABuscar:string = "";
   title = 'AngularPeliculas';
 
   peliculaSeleccionada:Pelicula = new Pelicula(0, "", "", 0, 0, "", "", "");
   declarations: [SafePipe];
   constructor(){
-
   }
 
-  recibirSelPeli($event){
-    console.log('Hola');
-    console.log($event.titulo)
+  buscar(textoABuscar:any):void{
+    console.log("Buscando en app.component.ts:" + textoABuscar);
+    this.textoABuscar=textoABuscar;
   }
+
 }
